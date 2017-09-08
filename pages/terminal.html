@@ -1,0 +1,119 @@
+	<style>
+
+
+  .terminal {
+    background: transparent;
+    margin-top: -50px;
+    margin-left: -125px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.4);
+    width: 100%;
+    font: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .dollar:before {
+    content: ':~ jayvii$ ';
+    color: #f5da55;
+      font-size: 16px;
+      font-family: 'Varela Round', sans-serif, monaco, 'Bitstream Vera Sans Mono', monospace;
+  }
+  pre{
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif, monaco, 'Bitstream Vera Sans Mono', monospace;
+  }
+</style>
+<article class="module desktop-12 tablet-12">
+      <div class="terminal">
+
+    <span class="dollar"></span> Hi<br/>
+     <span class="dollar"></span> I'll introduce myself in JavaScript ES6 code<br/>
+    <span class="dollar"></span> I promise will be cool ;)<br/>
+    <span class="dollar"></span> Ok lets start...<br/>
+    <pre>
+      /*
+       * "Myself in ES6" v1.0.1
+       * Rights protected under BOT License
+       * Authored by https://github.com/jayvi
+       */
+      class Person {
+          constructor(name) {
+              this._name = name;
+          }
+
+          get name() {
+              return this._name;
+          }
+
+          set name(newName) {
+              this._name = newName;
+          }
+
+          walk() {
+              console.log(this._name + ' write code sometimes when walking. :P ');
+          }
+      }
+      class Education extends Person {
+          constructor(name, degree) {
+              super(name);
+              this._degree = degree;
+          }
+
+          get degree() {
+              return this._degree;
+          }
+
+          set degree(newDegreee) {
+              this._degree = newDegreee;
+          }
+
+          writeDegree() {
+              console.log(this._name + ' is ' + this._degree + '.');
+          }
+      }
+      class Programmer extends Person {
+          constructor(name, programmingLanguage) {
+              super(name);
+              this._programmingLanguage = programmingLanguage;
+          }
+
+          get programmingLanguage() {
+              return this._programmingLanguage;
+          }
+
+          set programmingLanguage(newprogrammingLanguage) {
+              this._programmingLanguage = newprogrammingLanguage;
+          }
+
+          writeCode() {
+              console.log(this._name + ' is coding in ' + this._programmingLanguage + '.');
+          }
+      }
+
+      let me = new Person('Jay');
+
+
+      let jay = new Programmer('Jay', 'JavaScript | Node JS and PHP');
+      let jayDegree = new Education('Jay', 'Graduate Software Engineer');
+      jay.walk();
+      jay.writeCode();
+      jayDegree.writeDegree();
+      console.log(jay.name);
+      /*
+       * I can do that all day but
+       * instead of that go to my CV page
+       */
+       <span class="dollar"></span> You think my code doesn't worked?!?<br/>
+       <span class="dollar"></span> Open your terminal<br/>
+      <span class="dollar"></span>Windows : Ctrl + Shift + J	<br/>
+      <span class="dollar"></span> MAC : Cmd + Opt + J
+      </pre>
+      </div>
+
+
+<div id="terminalHolder"></div>
+<terminal-dir></terminal-dir>
+</article>

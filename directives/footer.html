@@ -1,0 +1,46 @@
+<style>
+
+span.incoming-pulse {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 0 0 0 rgba(255, 235, 59, 0.38);
+    animation: incomingPulse 1.7s infinite;
+}
+
+.incoming-pulse:hover {
+   background: rgb(255, 235, 59);
+ }
+
+@-webkit-keyframes incomingPulse {
+   0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(28, 180, 105, 0.4);
+   }
+   70% {
+      -webkit-box-shadow: 0 0 0 26px rgba(28, 180, 105, 0);
+   }
+   100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(28, 180, 105, 0);
+   }
+}
+
+@keyframes incomingPulse {
+   0% {
+     -moz-box-shadow: 0 0 0 0 rgba(255,235,59,0.6);
+     box-shadow: 0 0 0 0 rgba(255,235,59,0.6);
+   }
+   70% {
+      -moz-box-shadow: 0 0 0 27px rgba(28, 180, 105, 0);
+      box-shadow: 0 0 0 27px rgba(28, 180, 105, 0);
+   }
+   100% {
+      -moz-box-shadow: 0 0 0 0 rgba(28, 180, 105, 0);
+      box-shadow: 0 0 0 0 rgba(28, 180, 105, 0);
+   }
+}
+</style>

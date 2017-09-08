@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "213.252.247.230",
+    "username": "root",
+    "password": "V20kx7JK4Tt0bGEr5t",
+    "port": 22,
+    "remotePath": "/usr/share/nginx/www/jayvii.com/public_html",
+    "uploadOnSave": true
+}

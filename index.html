@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="jaySite" ng-cloak class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jay Vii Official Portfolio</title>
+		<meta name="description" content="Jay Vii Official Website" />
+		<meta name="keywords" content="portfolio,slideshow, images,jayvii,jayvii.com,,php,nodejs,javascript, layout, asymmetric, css, html, javascript, template" />
+		<meta name="author" content="jay_site" />
+		<link rel="shortcut icon" type="image/png" href="public/assets/img/favicon.png"/>
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="public/assets/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="public/assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="public/assets/css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="public/assets/css/slideshow.css" />
+		<link rel="stylesheet" type="text/css" href="public/assets/css/slideshow_layouts.css" />
+
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<style>
+			.ie-message { display: inline-block; }
+  		</style>
+		<![endif]-->
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body>
+		<div logo-directive></div>
+		<main>
+		<div header-directive></div>
+			<div class="container" tabindex="0">
+				<div class="row">
+				  <div class="col-md-12 thePage">
+
+						<ng-view></ng-view>
+					</div>
+			</div>
+
+
+		</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="public/assets/jquery/dist/jquery.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-messages.min.js" charset="utf-8"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-route.js" charset="utf-8"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-resource.js" charset="utf-8"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+	<script src="public/assets/js/anime.min.js"></script>
+	<script src="public/assets/angular-load/angular-load.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="app.js"></script>
+<script src="public/assets/js/parallax.min.js"></script>
+<script src="public/assets/js/TweenMax.min.js"></script>
+
+<script>
+</script>
+<analytics-dir></analytics-dir>
+<script src="public/assets/js/sweetalert.min.js"></script>
+<link rel="stylesheet" href="public/assets/css/sweetalert.css">
+<script type="text/javascript">
+function JSalert(){
+	swal({   title: "You will be redirected to my last project CSSAwards.com!",
+    text: "CSS Awards is a website design award gallery for web designers and developers to showcase their best web design works and win website design awards",
+    type: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#FFEB3B",
+    confirmButtonText: "Yes, Show me",
+    cancelButtonText: "No, Thanks!",
+    closeOnConfirm: false,
+    closeOnCancel: false },
+    function(isConfirm){
+        if (isConfirm)
+    {
+      window.open(
+					'http://cssawards.com',
+					'_blank' // <- This is what makes it open in a new window.
+					);
+
+    }else {
+      swal("Ok i understand");
+    } });
+}
+// setTimeout(function(){
+// 	window.location.href= 'http://cssawards.com/';
+// },5000) 
+JSalert();
+</script>
+	</body>
+</html>
